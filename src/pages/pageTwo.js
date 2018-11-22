@@ -18,19 +18,7 @@ class PageTwo extends Component {
         console.log(this.props.bp)
     };
 
-    addInfoHandler = () => {
-    console.log(this.props.bp)
-    const plan = {
-        data: this.props.bp
-    }
 
-
-
-    axios.post('/businessplans.json', plan)
-    .then(response => console.log(response))
-    .catch(error => console.log(error))
-
-    }
 
 
 render() {
@@ -43,11 +31,6 @@ render() {
         }
     }
 
-    const inputStyle = {
-        width: '90%',
-        height: '150px'
-    }
-
     return (
 
         <div className="container" style={style}>
@@ -55,37 +38,35 @@ render() {
         <p>PAGE 2/6</p>
         <h2>Internal analysis</h2>
         <p>use Porter's 5 forces to identify market opportunities</p>
-        Supplier's power
+
         <br/>
-        Tips Examples
-        <input style={inputStyle} type="text" name="supply"/>
+        <label htmlFor="textarea">Supplyer's power</label>
         <br/>
-        Competition
+        <textarea cols="70" rows="7" name="supply" id="textarea" required></textarea>
+
         <br/>
-        Tips Examples
-        <input style={inputStyle} type="text" name="competition"/>
+        <label htmlFor="textarea">Competition</label>
         <br/>
-        Buyers power
+        <textarea cols="70" rows="7" name="competition" id="textarea" required></textarea>
+
         <br/>
-        Tips Examples
-        <input style={inputStyle} type="text" name="buyers"/>
+        <label htmlFor="textarea">Buyer's power</label>
         <br/>
-        Threat of Substitution
+        <textarea cols="70" rows="7" name="buyers" id="textarea" required></textarea>
+
         <br/>
-        Tips Examples
-        <input style={inputStyle} type="text" name="threat"/>
+        <label htmlFor="textarea">Threat of Substitution</label>
         <br/>
-        Difficulties for New Entries
+        <textarea cols="70" rows="7" name="threat" id="textarea" required></textarea>
+
         <br/>
-        Tips Examples
-        <input style={inputStyle} type="text" name="entries"/>
+        <label htmlFor="textarea">New entrant's defficulties</label>
+        <br/>
+        <textarea cols="70" rows="7" name="entries" id="textarea" required></textarea>
+
         <br/>
         <input type="submit" value="Submit" />
         </form>
-        <button
-        onClick={() => this.addInfoHandler()}>
-        ONE
-        </button>
         </div>
         )
 }

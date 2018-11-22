@@ -36,10 +36,9 @@ class MainPage extends Component {
         const plans = this.state.data.map(plan => {
 
             return <SelectedPlan
-            legal={plan.data.external[0].legal}
-            economical={plan.data.external[0].economical}
-            political={plan.data.external[0].political}
-            buyerspower = {plan.data.internal[0].buyer_power}
+            name={plan.data.usertitle[0].userName}
+            created={plan.data.hr[0].date}
+            title={plan.data.usertitle[0].title}
             clicked={() => this.planSelectorHandler(plan.id)} />
         });
 

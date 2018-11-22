@@ -3,11 +3,11 @@ import React from 'react';
 
 const plan = (props) => (
     <article className="Plan" onClick={props.clicked}>
-    <h3>Legal:{props.legal}</h3>
-    <h3>Economcal:{props.economical}</h3>
-    <h3>Buyers power:{props.buyerspower}</h3>
+    <h3>Created by: {props.name}</h3>
+    <h3>Idea: {props.title}</h3>
+    <h3>When? {props.created}</h3>
 
-  </article>
+    </article>
 );
 
 

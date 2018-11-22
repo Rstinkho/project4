@@ -35,9 +35,12 @@ class PageFour extends Component {
           <option value="development">Market Development</option>
           <option value="adoptation">Market adoptation</option>
         </select>
+
         <br/>
-        Description
-        <input type="text" name="strategy"/>
+        <label htmlFor="textarea">Description</label>
+        <br/>
+        <textarea cols="70" rows="7" name="strategy" id="textarea" required></textarea>
+
 
         <h2>Integrated marketing communication strategies</h2>
         <select id="imcstrg" form="imcstrg">
@@ -46,9 +49,12 @@ class PageFour extends Component {
           <option value="facebook">Facebook</option>
           <option value="instagram">Instagram</option>
         </select>
-        <br />
-        Description
-        <input type="text" name="imcstrategy"/>
+
+        <br/>
+        <label htmlFor="textarea">Description</label>
+        <br/>
+        <textarea cols="70" rows="7" name="imcstrategy" id="textarea" required></textarea>
+
         <br />
         <input type="submit" value="Submit" />
         </form>

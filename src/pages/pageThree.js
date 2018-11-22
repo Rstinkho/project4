@@ -29,14 +29,22 @@ class PageThree extends Component {
         <p>PAGE 3/6</p>
         <h2>STP</h2>
         <p>Know your customers</p>
-        Segmentation
-        <input type="text" name="segmentation"/>
+
         <br/>
-        Targeting
-        <input type="text" name="targeting"/>
+        <label htmlFor="textarea">Segmentation</label>
         <br/>
-        Positioning
-        <input type="text" name="positioning"/>
+        <textarea cols="70" rows="7" name="segmentation" id="textarea" required></textarea>
+
+        <br/>
+        <label htmlFor="textarea">Targeting</label>
+        <br/>
+        <textarea cols="70" rows="7" name="targeting" id="textarea" required></textarea>
+
+        <br/>
+        <label htmlFor="textarea">Positioning</label>
+        <br/>
+        <textarea cols="70" rows="7" name="positioning" id="textarea" required></textarea>
+
         <br/>
         <input type="submit" value="Submit" />
         </form>

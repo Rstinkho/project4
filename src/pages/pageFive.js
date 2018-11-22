@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Radium from 'radium';
+import axios from './../axios-orders';
 
 class PageFive extends Component {
 
@@ -13,11 +14,27 @@ class PageFive extends Component {
             hrStrTwoDesc: event.target["two"].value,
             hrStrThree: document.getElementById("hrThree").value,
             hrStrThreeDesc: event.target["three"].value,
+            date: document.getElementById("clock").value
         }
         this.props.bp.hr.push(summary)
+        console.log(summary)
     };
-    render() {
 
+    addInfoHandler = () => {
+    console.log(this.props.bp)
+    const plan = {
+        data: this.props.bp
+    }
+
+
+
+    axios.post('/businessplans.json', plan)
+    .then(response => console.log(response))
+    .catch(error => console.log(error))
+
+    }
+
+    render() {
         const style = {
 
             backgroundColor: 'lightyellow',
@@ -49,7 +66,7 @@ class PageFive extends Component {
               <option value="High-Performance Management">High-Performance Management</option>
               <option value="Corporate Social Responsibility">Corporate Social Responsibility</option>
             </select>
-            <input style={inputStyle} type="text" name="one" />
+            <textarea cols="70" rows="7" name="one" id="textarea" required></textarea>
           </div>
 
           <div className="block" id="sexe">
@@ -61,7 +78,7 @@ class PageFive extends Component {
               <option value="High-Performance Management">High-Performance Management</option>
               <option value="Corporate Social Responsibility">Corporate Social Responsibility</option>
             </select>
-            <input style={inputStyle} type="text" name="two" />
+            <textarea cols="70" rows="7" name="two" id="textarea" required></textarea>
           </div>
 
           <div className="block" id="sexe">
@@ -73,17 +90,21 @@ class PageFive extends Component {
                           <option value="High-Performance Management">High-Performance Management</option>
                           <option value="Corporate Social Responsibility">Corporate Social Responsibility</option>
                         </select>
-            <input style={inputStyle} type="text" name="three" />
+            <textarea cols="70" rows="7" name="three" id="textarea" required></textarea>
           </div>
 
           <div className="block" id="date">
             <h4>4 &mdash; Choose the end date</h4>
             <fieldset><i className="fa fa-calendar-o"></i>
-              <input className="row" type="date" placeholder="Birthdate"/>
+              <input id="clock" className="row" type="date" placeholder="Birthdate"/>
             </fieldset>
           </div>
           <input type="submit" value="Submit" />
         </form>
+        <button
+        onClick={() => this.addInfoHandler()}>
+        Upload BP
+        </button>
         </div>
         )
 }
