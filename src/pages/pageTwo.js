@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Radium from 'radium';
-import axios from './../axios-orders';
+
 
 class PageTwo extends Component {
 

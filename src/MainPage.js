@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import SelectedPlan from './SelectedPlan.js'
 import FullPlan from './FullPlan.js'
+import './App.css';
 
 
 
@@ -36,6 +37,7 @@ class MainPage extends Component {
         const plans = this.state.data.map(plan => {
 
             return <SelectedPlan
+            key={plan.id}
             name={plan.data.usertitle[0].userName}
             created={plan.data.hr[0].date}
             title={plan.data.usertitle[0].title}

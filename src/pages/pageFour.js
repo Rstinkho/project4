@@ -30,10 +30,10 @@ class PageFour extends Component {
         <h1>What strategy are you going to use?</h1>
         <h2>Marketing strategies</h2>
         <select id="mstrg" form="mstrg">
-          <option value="penetration">Market Penetration</option>
-          <option value="skimming">Skimming</option>
-          <option value="development">Market Development</option>
-          <option value="adoptation">Market adoptation</option>
+          <option value="Market Penetration">Market Penetration</option>
+          <option value="Skimming">Skimming</option>
+          <option value="Market development">Market Development</option>
+          <option value="Market adoptation">Market adoptation</option>
         </select>
 
         <br/>
@@ -44,10 +44,10 @@ class PageFour extends Component {
 
         <h2>Integrated marketing communication strategies</h2>
         <select id="imcstrg" form="imcstrg">
-          <option value="traditional">Traditional media</option>
-          <option value="twitter">Twitter</option>
-          <option value="facebook">Facebook</option>
-          <option value="instagram">Instagram</option>
+          <option value="Traditional Media">Traditional media</option>
+          <option value="Twitter">Twitter</option>
+          <option value="Facebook">Facebook</option>
+          <option value="Instagram">Instagram</option>
         </select>
 
         <br/>

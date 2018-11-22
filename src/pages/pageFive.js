@@ -45,10 +45,7 @@ class PageFive extends Component {
             }
         }
 
-        const inputStyle = {
-            width: '90%',
-            height: '150px'
-        }
+
 
     return (
         <div className="container" style={style}>
