@@ -26,7 +26,7 @@ render() {
         backgroundColor: 'lightblue',
         border: '2px solid black',
         ':hover': {
-            backgroundColor: 'lightgreen',
+            backgroundColor: 'lightgray',
             color: 'black'
         }
     }
@@ -39,9 +39,9 @@ render() {
 
         <div className="container" style={style}>
         <form name="pageTwo" onSubmit={(event) => this.externalSubmit(event)}>
-        <p style={styleP}>PAGE 3/6</p>
+        <i style={styleP}>PAGE 3/6</i>
         <h2>Internal analysis</h2>
-        <p>use Porter's 5 forces to identify market opportunities</p>
+        <i>use Porter's 5 forces to identify market opportunities</i>
 
         <br/>
         <label htmlFor="textarea">Supplyer's power</label>

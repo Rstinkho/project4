@@ -40,7 +40,7 @@ class PageFive extends Component {
             backgroundColor: 'lightyellow',
             border: '2px solid black',
             ':hover': {
-                backgroundColor: 'lightgreen',
+                backgroundColor: 'lightgray',
                 color: 'black'
             }
         }
@@ -53,7 +53,7 @@ class PageFive extends Component {
 
     return (
         <div className="container" style={style}>
-        <p style={styleP}>STEP 6/6</p>
+        <i style={styleP}>STEP 6/6</i>
         <h1>Human Resource management strategies</h1>
         <form name="pageFive" onSubmit={(event) => this.externalSubmit(event)}>
           <div className="block" id="intro">

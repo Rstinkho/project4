@@ -19,7 +19,7 @@ class PageThree extends Component {
             backgroundColor: 'lightyellow',
             border: '2px solid black',
             ':hover': {
-                backgroundColor: 'lightgreen',
+                backgroundColor: 'lightgray',
                 color: 'black'
             }
         }
@@ -30,9 +30,9 @@ class PageThree extends Component {
     return (
         <div className="container" style={style}>
         <form name="pageThree" onSubmit={(event) => this.externalSubmit(event)}>
-        <p style={styleP}>STEP 4/6</p>
+        <i style={styleP}>STEP 4/6</i>
         <h2>STP</h2>
-        <p>Know your customers</p>
+        <i>Know your customers</i>
 
         <br/>
         <label htmlFor="textarea">Segmentation</label>

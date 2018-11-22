@@ -18,7 +18,7 @@ class UserAndTitle extends Component {
             backgroundColor: 'lightyellow',
             border: '2px solid black',
             ':hover': {
-                backgroundColor: 'lightgreen',
+                backgroundColor: 'lightgray',
                 color: 'black'
             }
         }
@@ -31,7 +31,7 @@ class UserAndTitle extends Component {
 
 
         <form name="pageThree" onSubmit={(event) => this.externalSubmit(event)}>
-        <span style={styleP}> STEP 1/6 </span>
+        <i style={styleP}> STEP 1/6 </i>
         <div>What is your name:</div>
         <input type="text" name="username"/>
         <br/>

@@ -23,7 +23,7 @@ class PageOne extends Component {
             backgroundColor: 'lightyellow',
             border: '2px solid black',
             ':hover': {
-                backgroundColor: 'lightgreen',
+                backgroundColor: 'lightgray',
                 color: 'black'
             }
         }
@@ -38,10 +38,10 @@ class PageOne extends Component {
             <div className="container" style={style}>
 
             <form name="pageOne" onSubmit={(event) => this.externalSubmit(event)}>
-            <p style={styleP}>STEP 2/6</p>
+            <i style={styleP}>STEP 2/6</i>
             <h1>Start from your environmental researches</h1>
             <h2>External analysis</h2>
-            <p>use PESTEL in order to cover the basic points</p>
+            <i>use PESTEL in order to cover the basic points</i>
             <label htmlFor="textarea">Political</label>
             <br/>
             <textarea cols="70" rows="7" name="political" id="textarea" required></textarea>
