@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import SelectedPlan from './SelectedPlan.js'
 import FullPlan from './FullPlan.js'
-import './App.css';
+import './App.css'
+import { Route } from  'react-router-dom'
 
 
 
@@ -46,9 +47,10 @@ class MainPage extends Component {
 
         return (
             <div>
-            <section className="Plans">
-            {plans}
-            </section>
+
+            <Route path="/bplans" exact render={() => <section className="Plans">
+            {plans}</section> } />
+
             <section>
                 <FullPlan id={this.state.SelectedPlanID} />
             </section>

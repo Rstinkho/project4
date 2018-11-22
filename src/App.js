@@ -8,8 +8,10 @@ import PageThree from './pages/pageThree.js'
 import PageFour from './pages/pageFour.js'
 import PageFive from './pages/pageFive.js'
 import MainPage from './MainPage.js'
+import Land from './pages/landingPage.js'
 import UserAndTitle from './pages/UserAndTitle.js'
-
+import { BrowserRouter } from 'react-router-dom'
+import { Route } from  'react-router-dom'
 class App extends Component {
 
   render() {
@@ -25,22 +27,37 @@ class App extends Component {
 
 
     return (
-
+    <BrowserRouter>
       <div className="App">
-      <UserAndTitle
-      bp = {businessPlan}/>
-      <PageOne
-      bp = {businessPlan} />
-      <PageTwo
-      bp = {businessPlan} />
-      <PageThree
-      bp = {businessPlan} />
-      <PageFour
-      bp = {businessPlan} />
-      <PageFive
-      bp = {businessPlan}  />
-      <MainPage />
+      <div>
+          <header>
+              <nav>
+                  <ul>
+                      <li><a href="/index">Home</a></li>
+                  </ul>
+              </nav>
+          </header>
+
+
+
       </div>
+      <Route path="/reg" exact render={() => <UserAndTitle
+      bp = {businessPlan}/> } />
+      <Route path="/reg" exact render={() => <PageOne
+      bp = {businessPlan}/> } />
+      <Route path="/reg" exact render={() => <PageTwo
+      bp = {businessPlan}/> } />
+      <Route path="/reg" exact render={() => <PageThree
+      bp = {businessPlan}/> } />
+      <Route path="/reg" exact render={() => <PageFour
+      bp = {businessPlan}/> } />
+      <Route path="/reg" exact render={() => <PageFive
+      bp = {businessPlan}/> } />
+      <Route path="/bplans" exact render={() => <MainPage /> } />
+      <Route path="/index" exact render={() => <Land /> } />
+
+      </div>
+      </BrowserRouter>
 
     );
   }

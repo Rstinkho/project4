@@ -24,6 +24,9 @@ class UserAndTitle extends Component {
         }
     return (
         <div className="container" style={style}>
+        <div class="container">
+
+        </div>
         <form name="pageThree" onSubmit={(event) => this.externalSubmit(event)}>
         <p>PAGE 0/6</p>
         <h2>What is your name</h2>

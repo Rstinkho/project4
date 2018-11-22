@@ -25,7 +25,7 @@ class FullPlan extends Component {
     }
 
     render () {
-        let post = <p>Please select a Post!</p>;
+        let post = "";
         if ( this.props.id ) {
             post = <p>Loading...!</p>;
         }
