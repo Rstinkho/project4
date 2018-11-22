@@ -2,12 +2,19 @@ import React from 'react';
 
 
 const plan = (props) => (
-    <article className="Plan" onClick={props.clicked}>
-    <h3>Created by: {props.name}</h3>
-    <h3>Idea: {props.title}</h3>
-    <h3>When? {props.created}</h3>
 
-    </article>
+    <div className="card" onClick={props.clicked}>
+      <div className="card-header">
+        IDEA: {props.title}
+      </div>
+      <div className="card-body">
+        <h5 className="card-title">Created by: {props.name}</h5>
+        <p class="card-text">When: {props.created}</p>
+        <a href="#" class="btn btn-primary">about author</a>
+      </div>
+    </div>
+
+
 );
 
 

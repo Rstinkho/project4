@@ -48,6 +48,23 @@ h2 {
     margin-left: -12px;
 }
 
+input {
+	margin: 16px;
+}
+
+button {
+	margin: 16px;
+}
+
+.container {
+	margin-top: 20px;
+}
+
+.FullPost {
+	text-align: justify;
+
+}
+
 .header {
     color: #dcf3f6;
     background-color: #00C1D5;

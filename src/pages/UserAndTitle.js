@@ -22,21 +22,25 @@ class UserAndTitle extends Component {
                 color: 'black'
             }
         }
+        const styleP ={
+            float: 'right'
+        }
     return (
         <div className="container" style={style}>
-        <div class="container">
+        <div className="container">
 
-        </div>
+
         <form name="pageThree" onSubmit={(event) => this.externalSubmit(event)}>
-        <p>PAGE 0/6</p>
-        <h2>What is your name</h2>
+        <span style={styleP}> STEP 1/6 </span>
+        <div>What is your name:</div>
         <input type="text" name="username"/>
         <br/>
-        <h2>What are you trying to create?</h2>
+        <div>What are you trying to create:</div>
         <input type="text" name="title"/>
         <br/>
         <input type="submit" value="Submit" />
         </form>
+        </div>
         </div>
         )
     }

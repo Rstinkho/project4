@@ -45,11 +45,15 @@ class PageFive extends Component {
             }
         }
 
+        const styleP ={
+            float: 'right'
+        }
+
 
 
     return (
         <div className="container" style={style}>
-        <p>PAGE 5/6</p>
+        <p style={styleP}>STEP 6/6</p>
         <h1>Human Resource management strategies</h1>
         <form name="pageFive" onSubmit={(event) => this.externalSubmit(event)}>
           <div className="block" id="intro">

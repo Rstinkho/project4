@@ -23,10 +23,14 @@ class PageFour extends Component {
                 color: 'black'
             }
         };
+
+        const styleP ={
+            float: 'right'
+        }
     return (
         <div className="container" style={style}>
         <form name="pageFour" onSubmit={(event) => this.externalSubmit(event)}>
-        <p>PAGE 4/6</p>
+        <p style={styleP}>STEP 5/6</p>
         <h1>What strategy are you going to use?</h1>
         <h2>Marketing strategies</h2>
         <select id="mstrg" form="mstrg">

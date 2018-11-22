@@ -31,11 +31,15 @@ render() {
         }
     }
 
+    const styleP ={
+        float: 'right'
+    }
+
     return (
 
         <div className="container" style={style}>
         <form name="pageTwo" onSubmit={(event) => this.externalSubmit(event)}>
-        <p>PAGE 2/6</p>
+        <p style={styleP}>PAGE 3/6</p>
         <h2>Internal analysis</h2>
         <p>use Porter's 5 forces to identify market opportunities</p>
 

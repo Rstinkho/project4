@@ -28,13 +28,17 @@ class PageOne extends Component {
             }
         }
 
+        const styleP ={
+            float: 'right'
+        }
+
 
         return (
 
             <div className="container" style={style}>
 
             <form name="pageOne" onSubmit={(event) => this.externalSubmit(event)}>
-            <p>PAGE 1/6</p>
+            <p style={styleP}>STEP 2/6</p>
             <h1>Start from your environmental researches</h1>
             <h2>External analysis</h2>
             <p>use PESTEL in order to cover the basic points</p>
