@@ -39,6 +39,7 @@ class MainPage extends Component {
             legal={plan.data.external[0].legal}
             economical={plan.data.external[0].economical}
             political={plan.data.external[0].political}
+            buyerspower = {plan.data.internal[0].buyer_power}
             clicked={() => this.planSelectorHandler(plan.id)} />
         });
 

@@ -8,21 +8,27 @@ import PageThree from './pages/pageThree.js'
 import PageFour from './pages/pageFour.js'
 import PageFive from './pages/pageFive.js'
 import MainPage from './MainPage.js'
+import UserAndTitle from './pages/UserAndTitle.js'
 
 class App extends Component {
 
   render() {
 
     const businessPlan = {
+        usertitle: [],
         external: [],
         internal: [],
         stp: [],
         marketing: [],
+        hr: []
     }
 
 
     return (
+
       <div className="App">
+      <UserAndTitle
+      bp = {businessPlan}/>
       <PageOne
       bp = {businessPlan} />
       <PageTwo
@@ -31,7 +37,8 @@ class App extends Component {
       bp = {businessPlan} />
       <PageFour
       bp = {businessPlan} />
-      <PageFive />
+      <PageFive
+      bp = {businessPlan}  />
       <MainPage />
       </div>
 

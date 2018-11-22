@@ -28,11 +28,6 @@ class PageOne extends Component {
             }
         }
 
-        const inputStyle = {
-            width: '90%',
-            height: '150px'
-        }
-
 
         return (
 
@@ -43,35 +38,34 @@ class PageOne extends Component {
             <h1>Start from your environmental researches</h1>
             <h2>External analysis</h2>
             <p>use PESTEL in order to cover the basic points</p>
-            Political
+            <label htmlFor="textarea">Political</label>
             <br/>
-            Tips Examples
-            <input style={inputStyle} type="text" name="political"/>
+            <textarea cols="70" rows="7" name="political" id="textarea" required></textarea>
+
             <br/>
-            Economical
+            <label htmlFor="textarea">Economical</label>
             <br/>
-            Tips Examples
-            <input style={inputStyle} type="text" name="economical" />
+            <textarea cols="70" rows="7" name="economical" id="textarea" required></textarea>
+
             <br/>
-            Social
+            <label htmlFor="textarea">Social</label>
             <br/>
-            Tips Examples
-            <input style={inputStyle} type="text" name="social"/>
+            <textarea cols="70" rows="7" name="social" id="textarea" required></textarea>
+
             <br/>
-            Technological
+            <label htmlFor="textarea">Technological</label>
             <br/>
-            Tips Examples
-            <input style={inputStyle} type="text" name="technological" />
+            <textarea cols="70" rows="7" name="technological" id="textarea" required></textarea>
+
             <br/>
-            Environmental
+            <label htmlFor="textarea">Environmental</label>
             <br/>
-            Tips Examples
-            <input style={inputStyle} type="text" name="environmental" />
+            <textarea cols="70" rows="7" name="environmental" id="textarea" required></textarea>
+
             <br/>
-            Legal
+            <label htmlFor="textarea">Legal</label>
             <br/>
-            Tips Examples
-            <input style={inputStyle} type="text" name="legal"/>
+            <textarea cols="70" rows="7" name="legal" id="textarea" required></textarea>
             <br/>
             <input type="submit" value="Submit" />
 
