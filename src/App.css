@@ -1,69 +1,38 @@
-.App {
-  text-align: center;
+.carousel-item {
+	height: 450px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+a {
+	text-decoration: none;
+	color: inherit;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a:hover {
+	text-decoration: none;
+	color: red;
 }
 
-.App-link {
-  color: #61dafb;
+.carousel-image-1 {
+	background-image: url("https://i.imgur.com/3oYxkFl.jpg");
+	background-size: cover;
+	color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-body {
-		background-image: url('https://i.imgur.com/LOwE69o.jpg');
-		background-size: cover;
-    background-color: #f8f8f8;
-    font-family: -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
-    padding: 0 0 10px;
-}
-
-h1, h2, h3, h4, h6 {
-    color: #dee8f9;
-    font-family: -apple-system-font, 'Segoe UI Light', 'Segoe UI', 'Roboto', sans-serif;
-    font-weight: 300;
-}
-
-h2 {
-    margin-top: 24px;
-    margin-left: -12px;
-}
-
-p {
+.carousel-caption h1 {
 	color: white;
+	font-family: 'Bungee', cursive;
+	background-color: black;
 }
 
-input {
-	margin: 16px;
+.carousel-caption p {
+	font-family: 'Acme', sans-serif;
+	color: black;
+	background-color: white;
 }
 
-button {
-	margin: 16px;
-}
-
-.container {
-	margin-top: 20px;
+.carousel-image-2 {
+	background-image: url("https://i.imgur.com/F54LKJG.jpg");
+	background-size: cover;
 }
 
 .FullPost {
@@ -71,30 +40,47 @@ button {
 
 }
 
-a {
-text-decoration: none;
-color: #dee3ea;
-font-size: 24px;
-font-weight: bold;
+#home-icons {
+	background-color: lightcyan;
 }
 
-.header {
-    color: #dcf3f6;
-    background-color: #00C1D5;
-    margin-bottom: 14px;
-    padding: 12px 0;
+#main-footer {
+	background-color: black;
+	color: white;
 }
 
-    .header h1 {
-        color: #fff;
-        font-size: 40px;
-        line-height: 1;
-        margin-top: 0;
-    }
+#home-heading {
+	background-color: lightcyan;
+}
 
-    .header img {
-		float: left;
-		margin: 0 10px 5px 0;
-	}
+#home-heading  h1 {
+	font-family: 'Bungee', cursive;
+}
+
+#home-heading  p {
+	font-color: navy;
+	font-size: 20px;
+	font-family: 'Acme', sans-serif;
+}
+
+#info {
+	background-color: lightcyan;
+}
+
+#info h3 {
+	color: red;
+	font-family: 'Bungee', cursive;
+}
+
+#info p {
+	font-family: 'Acme', sans-serif;
+}
+
+
+
+
+
+
+
 
 

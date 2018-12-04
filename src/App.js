@@ -28,31 +28,28 @@ class App extends Component {
    // <a href="/index">Home</a>
     return (
 
-    <BrowserRouter>
-      <div className="App">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Business Plan Creator</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<BrowserRouter>
+<div className="App">
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="/index">Home <span class="sr-only">(current)</span></a>
+<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a className="navbar-brand" href="/index">Business Plan Creator</a>
+
+    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
+    </button>
+
+  <div className="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul className="navbar-nav mr-auto">
+      <li className="nav-item active">
+        <a className="nav-link" href="/index">Home <span className="sr-only">(current)</span></a>
       </li>
-
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-
-
     </ul>
   </div>
 </nav>
+
+
+
+
       <Route path="/reg" exact render={() => <UserAndTitle
       bp = {businessPlan}/> } />
       <Route path="/reg" exact render={() => <PageOne
@@ -68,8 +65,19 @@ class App extends Component {
       <Route path="/bplans" exact render={() => <MainPage /> } />
       <Route path="/index" exact render={() => <Land /> } />
 
-      </div>
-      </BrowserRouter>
+      <footer id="main-footer" className="text-center p-4">
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <p>Copyright &copy;
+                <span id="year"></span> Business Plan Creator</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+</div>
+
+</BrowserRouter>
 
     );
   }
