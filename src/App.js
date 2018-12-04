@@ -65,7 +65,7 @@ class App extends Component {
       <Route path="/bplans" exact render={() => <MainPage /> } />
       <Route path="/index" exact render={() => <Land /> } />
 
-      <footer id="main-footer" className="text-center p-4">
+      <footer id="main-footer" className="text-center p-4 fixed-bottom">
         <div className="container">
           <div className="row">
             <div className="col">

@@ -1,3 +1,7 @@
+.App {
+margin-bottom: 55px;
+}
+
 .carousel-item {
 	height: 450px;
 }
@@ -35,6 +39,10 @@ a:hover {
 	background-size: cover;
 }
 
+.Plans{
+	display: inline-block;
+}
+
 .FullPost {
 	text-align: justify;
 
@@ -47,6 +55,7 @@ a:hover {
 #main-footer {
 	background-color: black;
 	color: white;
+	height: 55px;
 }
 
 #home-heading {

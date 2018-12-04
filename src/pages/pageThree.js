@@ -21,7 +21,8 @@ class PageThree extends Component {
             ':hover': {
                 backgroundColor: 'lightgray',
                 color: 'black'
-            }
+            },
+            marginTop: '5px'
         }
         const styleP ={
             float: 'right'
@@ -50,7 +51,7 @@ class PageThree extends Component {
         <textarea cols="70" rows="7" name="positioning" id="textarea" required></textarea>
 
         <br/>
-        <input type="submit" value="Submit" />
+        <button type="submit" className="btn btn-outline-secondary m-3" name="submit" value="Submit">submit</button>
         </form>
         </div>
         )

@@ -28,7 +28,8 @@ render() {
         ':hover': {
             backgroundColor: 'lightgray',
             color: 'black'
-        }
+        },
+        marginTop: '5px'
     }
 
     const styleP ={
@@ -69,7 +70,7 @@ render() {
         <textarea cols="70" rows="7" name="entries" id="textarea" required></textarea>
 
         <br/>
-        <input type="submit" value="Submit" />
+        <button type="submit" className="btn btn-outline-secondary m-3" name="submit" value="Submit">submit</button>
         </form>
         </div>
         )

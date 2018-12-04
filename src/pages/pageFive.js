@@ -42,7 +42,9 @@ class PageFive extends Component {
             ':hover': {
                 backgroundColor: 'lightgray',
                 color: 'black'
-            }
+            },
+            marginTop: '5px',
+            marginBottom: '100px'
         }
 
         const styleP ={
@@ -56,10 +58,10 @@ class PageFive extends Component {
         <i style={styleP}>STEP 6/6</i>
         <h1>Human Resource management strategies</h1>
         <form name="pageFive" onSubmit={(event) => this.externalSubmit(event)}>
-          <div className="block" id="intro">
-          </div>
-          <div className="block" id="sexe">
-            <h4>1 &mdash; Choose the specific HR practices you are going to implement</h4>
+        <div className="col">
+
+        <h4>1 &mdash; Choose the specific HR practices you are going to implement</h4>
+          <div className="row">
             <select id="hrOne">
               <option value="Resourcing">Resourcing</option>
               <option value="Talent management">Talent management</option>
@@ -70,8 +72,8 @@ class PageFive extends Component {
             <textarea cols="70" rows="7" name="one" id="textarea" required></textarea>
           </div>
 
-          <div className="block" id="sexe">
-            <h4>2 &mdash; Choose the specific HR practices you are going to implement</h4>
+          <h4>2 &mdash; Choose the specific HR practices you are going to implement</h4>
+          <div className="row">
             <select id="hrTwo">
               <option value="Resourcing">Resourcing</option>
               <option value="Talent management">Talent management</option>
@@ -82,8 +84,8 @@ class PageFive extends Component {
             <textarea cols="70" rows="7" name="two" id="textarea" required></textarea>
           </div>
 
-          <div className="block" id="sexe">
             <h4>3 &mdash; Choose the specific HR practices you are going to implement</h4>
+            <div className="row">
             <select id="hrThree">
                           <option value="Resourcing">Resourcing</option>
                           <option value="Talent management">Talent management</option>
@@ -92,17 +94,18 @@ class PageFive extends Component {
                           <option value="Corporate Social Responsibility">Corporate Social Responsibility</option>
                         </select>
             <textarea cols="70" rows="7" name="three" id="textarea" required></textarea>
-          </div>
+            </div>
 
-          <div className="block" id="date">
+          <div>
             <h4>4 &mdash; Choose the end date</h4>
             <fieldset><i className="fa fa-calendar-o"></i>
               <input id="clock" className="row" type="date" placeholder="Birthdate"/>
             </fieldset>
           </div>
-          <input type="submit" value="Submit" />
+          <button type="submit" className="btn btn-outline-secondary m-3" name="submit" value="Submit">submit</button>
+        </div>
         </form>
-        <button
+        <button className="btn btn-danger m-2"
         onClick={() => this.addInfoHandler()}>
         Upload BP
         </button>

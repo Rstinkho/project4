@@ -20,7 +20,8 @@ class UserAndTitle extends Component {
             ':hover': {
                 backgroundColor: 'lightgray',
                 color: 'black'
-            }
+            },
+            marginTop: '5px'
         }
         const styleP ={
             float: 'right'
@@ -38,7 +39,8 @@ class UserAndTitle extends Component {
         <div>What are you trying to create:</div>
         <input type="text" name="title"/>
         <br/>
-        <input type="submit" value="Submit" />
+
+        <button type="submit" className="btn btn-outline-secondary m-3" name="submit" value="Submit">submit</button>
         </form>
         </div>
         </div>
